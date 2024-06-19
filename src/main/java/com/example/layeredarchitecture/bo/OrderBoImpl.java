@@ -1,12 +1,11 @@
 package com.example.layeredarchitecture.bo;
 
 import com.example.layeredarchitecture.dao.OrderDAOImpl;
-import com.example.layeredarchitecture.dao.SQLUtil;
+
 import com.example.layeredarchitecture.model.OrderDTO;
 
-import java.sql.ResultSet;
+
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 public class OrderBoImpl {
 
