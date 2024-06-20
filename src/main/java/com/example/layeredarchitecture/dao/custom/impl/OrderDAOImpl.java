@@ -1,13 +1,14 @@
-package com.example.layeredarchitecture.dao;
+package com.example.layeredarchitecture.dao.custom.impl;
 
 
-import com.example.layeredarchitecture.db.DBConnection;
+import com.example.layeredarchitecture.dao.SQLUtil;
+import com.example.layeredarchitecture.dao.custom.OrderDAO;
 import com.example.layeredarchitecture.model.OrderDTO;
 
 import java.sql.*;
 import java.util.ArrayList;
 
-public class OrderDAOImpl implements OrderDAO{
+public class OrderDAOImpl implements OrderDAO {
 
     public String generateNewID() throws SQLException, ClassNotFoundException {
         /*

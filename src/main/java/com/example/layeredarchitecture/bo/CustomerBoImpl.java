@@ -1,17 +1,12 @@
 package com.example.layeredarchitecture.bo;
 
-import com.example.layeredarchitecture.dao.CustomerDAOImpl;
-import com.example.layeredarchitecture.dao.SQLUtil;
-import com.example.layeredarchitecture.db.DBConnection;
+import com.example.layeredarchitecture.dao.custom.impl.CustomerDAOImpl;
 import com.example.layeredarchitecture.model.CustomerDTO;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class CustomerBoImpl {
+public class CustomerBoImpl implements CustomerBo{
     public ArrayList<CustomerDTO> getAll() throws SQLException, ClassNotFoundException {
         CustomerDAOImpl customerDAO = new CustomerDAOImpl();
         return customerDAO.getAll();

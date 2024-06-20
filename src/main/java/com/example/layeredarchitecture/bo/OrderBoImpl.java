@@ -1,13 +1,13 @@
 package com.example.layeredarchitecture.bo;
 
-import com.example.layeredarchitecture.dao.OrderDAOImpl;
+import com.example.layeredarchitecture.dao.custom.impl.OrderDAOImpl;
 
 import com.example.layeredarchitecture.model.OrderDTO;
 
 
 import java.sql.SQLException;
 
-public class OrderBoImpl {
+public class OrderBoImpl implements OrderBo {
 
     public String generateNewID() throws SQLException, ClassNotFoundException {
         OrderDAOImpl orderDAO = new OrderDAOImpl();
